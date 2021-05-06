@@ -7,17 +7,20 @@ function Header(){
 		<div className = 'header'>
             <img src = {logo} className = "header__icon" />
 
-			<h1>Yo</h1>
-
-
-			<div className = 'header__center'>
+			<div className = 'header__left'>
 				<a>
-        			🚀🚀🚀🚀🚀
+        			About
        			</a>
 			</div>
-
+			<div className = 'header__center'>
+				<a>
+        			Learn
+       			</a>
+			</div>
 			<div className = "header__right">
-				<h1>Right</h1>
+				<a>
+        			Contact
+       			</a>
 
 			</div>
 

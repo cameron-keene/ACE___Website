@@ -1,6 +1,6 @@
 .header{
 	display:flex;
-	justify-content: space-between;
+	/*justify-content: space-between;*/
 	align-items: center;
 	position: sticky;
 	top: 0;
@@ -14,32 +14,41 @@
 }
 
 .header__icon{
-	object-fit: contain;
 	height: 40px;
 	margin-left: 20px;
 }
 
-.header__center{
+.header__left{
 	display: flex;
 	align-items: center;
 	flex: 1;
-	max-width: fit-content;
-	padding: 10px;
+	padding: 5px;
+	padding-left: 5px;
 	height: 30px;
-	border: 1px solid lightgray;
-	border-radius: 999px;
-
-}
-.header__center > input{
-	border: none;
-	padding: 10px;
-	outline-width: 0;
-}
-
-.header__right{
+	background-color: red;
+	text-align: right;
+	/*border: 1px solid lightgray;*/
+	/*border-radius: 9px;*/
+}.header__center{
 	display: flex;
 	align-items: center;
-	justify-self: space-between;
-	width: 15vw;
-	margin-right: 80px;
+	flex: 1;
+	width: 10px;
+	padding: 5px;
+	height: 30px;
+	background-color: blue;
+	text-align: right;
+
+	/*border: 1px solid lightgray;*/
+	/*border-radius: 9px;*/
+}
+.header__right{
+	text-align: right;
+	display: flex;
+	align-items: center;
+	flex: 1;
+	/*max-width: fit-content;*/
+	padding: 5px;
+	height: 30px;
+	background-color: green;
 }
