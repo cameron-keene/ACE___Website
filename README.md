@@ -4,7 +4,7 @@
 
 ### Make a clone using terminal
 
-`clone [https://github.com/cameron-keene/Please_work.git](https://github.com/cameron-keene/Please_work.git)`
+`clone` [`https://github.com/cameron-keene/Please_work.git`](https://github.com/cameron-keene/Please_work.git)
 
 
 Install GitHub pages
