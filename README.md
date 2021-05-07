@@ -1,9 +1,15 @@
 # Cloning and testing repository for local development
 
 ### Using terminal
+Clone the repository: 'clone https://github.com/cameron-keene/Please_work.git'
 
-'clone https://github.com/cameron-keene/Please_work.git'
+Create a personal branch: 'git checkout -b <branch_name>'
 
+Add the files to the branch: 'git add <file_name>' OR 'git add .' (to update everything in brach)
+
+Commit to the branch: git commit -m "Your message"
+
+Push the commit to your remote branch: 'git push --set-upstream origin <branch_name>'
 
 Install GitHub pages
 ### npm install gh-pages --save-dev
