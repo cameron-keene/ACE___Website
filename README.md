@@ -16,15 +16,20 @@ Push the commit to your remote branch: `git push --set-upstream origin <branch_n
 Run updated project: `npm start`
 
 ### Using GH desktop (assuming you also have Sublime Text)
-Clone the repository: Current Repository > Add > Clone Repositories > URL > https://github.com/cameron-keene/Please_work.git 
+Clone the repository
+* Current Repository > Add > Clone Repositories > URL > https://github.com/cameron-keene/Please_work.git 
 
-Create a personal branch: Current Branch > New Branch > "branch_name" > Create Branch > (If prompted) Bring my changes to "branch_name" > Switch Branch
+Create a personal branch
+* Current Branch > New Branch > "branch_name" > Create Branch > (If prompted) Bring my changes to "branch_name" > Switch Branch
 
-Edit files: On menu bar > Repository > Open in Sublime Text >  (to add a NEW file to branch) OR `git add .` (to update ALL files in branch)
+Edit files
+* On menu bar > Repository > Open in Sublime Text >  (to add a NEW file to branch) OR `git add .` (to update ALL files in branch)
 
-Commit to the branch and push it to the remote: Commit to "branch_name" > Publish Branch
+Commit to the branch and push it to the remote
+* Commit to "branch_name" > Publish Branch
 
-Run updated project: `npm start`
+Run updated project
+* `npm start`
 
 # Getting Started with Create React App
 
