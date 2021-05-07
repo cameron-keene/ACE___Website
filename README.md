@@ -1,14 +1,15 @@
-# Using repository for local development
+# Cloning and testing repository for local development
 
+### Using terminal
 
-
-### Make a clone using terminal
-
-`clone` [`https://github.com/cameron-keene/Please_work.git`](https://github.com/cameron-keene/Please_work.git)
+'clone https://github.com/cameron-keene/Please_work.git'
 
 
 Install GitHub pages
 ### npm install gh-pages --save-dev
+
+
+### Using GH desktop
 
 
 # Getting Started with Create React App
