@@ -1,3 +1,16 @@
+# Using repository for local development
+
+
+
+### Make a clone using terminal
+
+clone [https://github.com/cameron-keene/Please_work.git](https://github.com/cameron-keene/Please_work.git)
+
+
+Install GitHub pages
+### npm install gh-pages --save-dev
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
