@@ -26,7 +26,7 @@ Edit files
 * On menu bar > Repository > Open in Sublime Text >  (to add a NEW file to branch) OR `git add .` (to update ALL files in branch)
 
 Commit to the branch and push it to the remote
-* Commit to "branch_name" > Publish Branch
+* Commit to "branch_name" > Publish Branch > Push Origin
 
 Run updated project
 * `npm start`
