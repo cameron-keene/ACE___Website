@@ -7,11 +7,13 @@ Clone the repository: `clone https://github.com/cameron-keene/Please_work.git`
 
 Create a personal branch: `git checkout -b <branch_name>`
 
-Add the files to the branch: `git add <file_name>` (to add a new file to branch) OR `git add .` (to update everything in branch)
+Add the files to the branch: `git add <file_name>` (to add a NEW file to branch) OR `git add .` (to update ALL files in branch)
 
-Commit to the branch: `git commit -m "Your message`
+Commit to the branch: `git commit -m "Your message"`
 
 Push the commit to your remote branch: `git push --set-upstream origin <branch_name>`
+
+Run updated project: `npm start`
 
 
 ### Using GH desktop
