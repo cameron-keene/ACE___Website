@@ -5,7 +5,7 @@ function BackgroundImage(){
 	return(
 		<div className = 'BackgroundImage'>
             <h1 className = "BackgroundImage_text">UF Association of Computer Engineers</h1>
-			<img src={image}></img>
+			<img src={image} alt = "" className = "BackgroundImage_image"></img>
 		</div>
 		
 		

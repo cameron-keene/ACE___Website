@@ -1,7 +1,13 @@
 .BackgroundImage{			
     position: relative;
+    
 }		
 
 h1 {
     text-align:center;
+}
+
+.BackgroundImage > img{
+	width: 100%;
+	height:auto;
 }
