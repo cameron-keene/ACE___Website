@@ -18,22 +18,22 @@ function App() {
 		<NavigationBar />
 			<div className = "content"> 
 				<Switch>
-					<Route exact path = "/">
+					<Route exact path = "/Please_work/">
 						<HomePage />
 					</Route>
-					<Route path = "/About">
+					<Route path = "/Please_work/About">
 						<AboutPage />
 					</Route>
-					<Route path = "/Projects">
+					<Route path = "/Please_work/Projects">
 						<ProjectsPage />
 					</Route>
-					<Route path = "/Tutorials">
+					<Route path = "/Please_work/Tutorials">
 						<TutorialsPage />
 					</Route>
-					<Route path = "/Sponsors">
+					<Route path = "/Please_work/Sponsors">
 						<SponsersPage />
 					</Route>
-					<Route path = "/Join">
+					<Route path = "/Please_work/Join">
 						<JoinPage />
 					</Route>
 				</Switch>
