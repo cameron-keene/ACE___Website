@@ -37,6 +37,14 @@ Run updated project
 * merge to main branch
 * result will show up on gh-pages in roughly 5-10 minutes
 
+# Getting started with React-Router-Dom
+* Install with command: npm install react-router-dom@5 
+* Uses version 5 of react-router, lastest stable build
+* Import in App.js "import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';"
+* contain everything inside of return in App.js with <Router> </Router>
+* then use <Switch></Switch> and <Route path = "/About"> < !NameOfComponentToCall! /> </Route>
+* Import in NavBar component "import { Link } from 'react-router-dom';"
+* use <Link to= "/FILEPATH"></Link> inside of <NavItem></NavItem> to create links
 
 # Getting Started with Create React App
 
