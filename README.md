@@ -31,6 +31,13 @@ Commit to the branch and push it to the remote
 Run updated project
 * `npm start`
 
+### Deploying Project to gh-pages
+* npm run deploy 
+* commit/push to your branch
+* merge to main branch
+* result will show up on gh-pages in roughly 5-10 minutes
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
