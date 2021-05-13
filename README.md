@@ -31,7 +31,7 @@ Commit to the branch and push it to the remote
 Run updated project
 * `npm start`
 
-### Deploying Project to gh-pages
+# Deploying Project to gh-pages
 * npm run deploy 
 * commit/push to your branch
 * merge to main branch
