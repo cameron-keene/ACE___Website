@@ -1,0 +1,16 @@
+.aboutpage {
+	margin-top: 100px;
+	padding: 30px;
+	text-align: center;
+
+}.aboutpage >h5{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}.aboutpage >h2{
+	border-radius: 10px;
+}
+.about-content{
+	padding-top: 30px;
+	display: flex;
+	flex-direction: row;
+}

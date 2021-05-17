@@ -2,19 +2,20 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-
+import { Navbar, Nav, NavDropdown, NavItem } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import "./Footer.css"
 
 const Footer = () => {
 return (
-    <footer className="mt-5">
+    <footer className="mt-5" bg="dark">
 <Container fluid={true}>
 		<Row className="border-top justify-content-between p-3">
 		<Col className="p-0" md={3}>
 			<h5>Association of Software Engineers</h5>
             {/* TODO 
             Add Social Media Icons */}
-            <Nav className="ml-auto">
+            <Nav className="ml-auto" bg="dark">
                 <Nav.Link href="#aboutus">Instagram</Nav.Link>
                 <Nav.Link href="#projects">Facebook</Nav.Link>
                 <Nav.Link href="#deets">Slack</Nav.Link>
@@ -23,17 +24,17 @@ return (
 		<Col>
 			<h5>Menu</h5>
             <Nav className="ml-auto">
-                <Nav.Link href="#aboutus">About us</Nav.Link>
-                <Nav.Link href="#projects">Projects</Nav.Link>
-                <Nav.Link href="#deets">Tutorials</Nav.Link>
-                <Nav.Link href="#sponsors">Sponsors</Nav.Link>
-                <Nav.Link href="#join">Join</Nav.Link>  
+                <NavItem>   <Link className="nav-link"   to="/Please_work/About">About us</Link> </NavItem> 
+                <NavItem>   <Link className="nav-link"   to="/Please_work/Projects">Projects</Link> </NavItem> 
+                <NavItem>   <Link className="nav-link"   to="/Please_work/Tutorials">Tutorials</Link> </NavItem> 
+                <NavItem>   <Link className="nav-link"   to="/Please_work/Sponsors">Sponsors</Link> </NavItem> 
+                <NavItem>   <Link className="nav-link"   to="/Please_work/Join">Join</Link> </NavItem>    
             </Nav>
 		</Col>
 		<Col>
 			<h5>Contact Us</h5>
             <Nav className="ml-auto">
-                <Nav.Link href="#aboutus">Join</Nav.Link>  
+                <NavItem>   <Link className="nav-link"   to="/Please_work/Join">Join</Link> </NavItem>    
             </Nav>
 		</Col>
 		</Row>

@@ -1,15 +1,14 @@
 import React from 'react';
 import BackgroundImage from '../features/BackgroundImage'
 import BackgroundYoutube from '../features/BackgroundYoutube'
-import Footer from '../features/Footer'
+import './HomePage.css'
 
 function HomePage() {
   return (
-  	<div className = "HomePage">
+  	<div className = "homepage">
   		<BackgroundImage/>
   		<h1>Latest Video</h1>
   		  <BackgroundYoutube embedId="rokGy0huYEA" />
-  		<Footer/>
 
   	</div>
     
