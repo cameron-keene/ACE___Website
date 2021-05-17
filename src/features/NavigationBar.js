@@ -3,12 +3,13 @@ import { Navbar, Nav, NavDropdown, NavItem } from 'react-bootstrap';
 import logo from '../imgs/logo-min.png';
 import HomePage from '../pages/HomePage';
 import { Link } from 'react-router-dom';
+import './NavigationBar.css';
 
 class NavigationBar extends Component{
     render(){
       return(
-        
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <div className = "navbar">
+          <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Navbar.Brand href="#home" className = "sticky-nav"> <Link className="nav-link"   to="/Please_work/"> <img src={logo} width="65" height="30" alt="" /> </Link> </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -21,6 +22,8 @@ class NavigationBar extends Component{
             </Nav>
           </Navbar.Collapse>
         </Navbar>
+        </div>      
+        
       )
     }
 }

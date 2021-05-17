@@ -8,6 +8,7 @@ import ProjectsPage from './pages/ProjectsPage';
 import TutorialsPage from './pages/TutorialsPage';
 import SponsersPage from './pages/SponsorsPage';
 import JoinPage from './pages/JoinPage';
+import Footer from './features/Footer.js'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 
@@ -38,6 +39,7 @@ function App() {
 					</Route>
 				</Switch>
 			</div>
+		<Footer/>
 	    </div>
   	</Router>
     
