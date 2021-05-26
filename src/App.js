@@ -19,22 +19,22 @@ function App() {
 		<NavigationBar />
 			<div className = "content"> 
 				<Switch>
-					<Route exact path = "/Please_work/">
+					<Route exact path = "/ACE_Website/">
 						<HomePage />
 					</Route>
-					<Route path = "/Please_work/About">
+					<Route path = "/ACE_Website/About">
 						<AboutPage />
 					</Route>
-					<Route path = "/Please_work/Projects">
+					<Route path = "/ACE_Website/Projects">
 						<ProjectsPage />
 					</Route>
-					<Route path = "/Please_work/Tutorials">
+					<Route path = "/ACE_Website/Tutorials">
 						<TutorialsPage />
 					</Route>
-					<Route path = "/Please_work/Sponsors">
+					<Route path = "/ACE_Website/Sponsors">
 						<SponsersPage />
 					</Route>
-					<Route path = "/Please_work/Join">
+					<Route path = "/ACE_Website/Join">
 						<JoinPage />
 					</Route>
 				</Switch>

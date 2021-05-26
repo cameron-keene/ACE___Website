@@ -10,15 +10,15 @@ class NavigationBar extends Component{
       return(
         <div className = "navbar">
           <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-          <Navbar.Brand href="#home" className = "sticky-nav"> <Link className="nav-link"   to="/Please_work/"> <img src={logo} width="65" height="30" alt="" /> </Link> </Navbar.Brand>
+          <Navbar.Brand href="#home" className = "sticky-nav"> <Link className="nav-link"   to="/ACE_Website/"> <img src={logo} width="65" height="30" alt="" /> </Link> </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto">
-                <NavItem>   <Link className="nav-link"   to="/Please_work/About">About us</Link> </NavItem> 
-                <NavItem>   <Link className="nav-link"   to="/Please_work/Projects">Projects</Link> </NavItem> 
-                <NavItem>   <Link className="nav-link"   to="/Please_work/Tutorials">Tutorials</Link> </NavItem> 
-                <NavItem>   <Link className="nav-link"   to="/Please_work/Sponsors">Sponsors</Link> </NavItem> 
-                <NavItem>   <Link className="nav-link"   to="/Please_work/Join">Join</Link> </NavItem>   
+                <NavItem>   <Link className="nav-link"   to="/ACE_Website/About">About us</Link> </NavItem> 
+                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Projects">Projects</Link> </NavItem> 
+                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Tutorials">Tutorials</Link> </NavItem> 
+                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Sponsors">Sponsors</Link> </NavItem> 
+                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Join">Join</Link> </NavItem>   
             </Nav>
           </Navbar.Collapse>
         </Navbar>

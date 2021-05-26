@@ -2,7 +2,7 @@
   "name": "please_work",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://cameron-keene.github.io/Please_work",
+  "homepage": "http://cameron-keene.github.io/ACE_Website",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
