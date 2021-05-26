@@ -24,17 +24,17 @@ return (
 		<Col>
 			<h5>Menu</h5>
             <Nav className="ml-auto">
-                <NavItem>   <Link className="nav-link"   to="/Please_work/About">About us</Link> </NavItem> 
-                <NavItem>   <Link className="nav-link"   to="/Please_work/Projects">Projects</Link> </NavItem> 
-                <NavItem>   <Link className="nav-link"   to="/Please_work/Tutorials">Tutorials</Link> </NavItem> 
-                <NavItem>   <Link className="nav-link"   to="/Please_work/Sponsors">Sponsors</Link> </NavItem> 
-                <NavItem>   <Link className="nav-link"   to="/Please_work/Join">Join</Link> </NavItem>    
+                <NavItem>   <Link className="nav-link"   to="/ACE_Website/About">About us</Link> </NavItem> 
+                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Projects">Projects</Link> </NavItem> 
+                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Tutorials">Tutorials</Link> </NavItem> 
+                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Sponsors">Sponsors</Link> </NavItem> 
+                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Join">Join</Link> </NavItem>    
             </Nav>
 		</Col>
 		<Col>
 			<h5>Contact Us</h5>
             <Nav className="ml-auto">
-                <NavItem>   <Link className="nav-link"   to="/Please_work/Join">Join</Link> </NavItem>    
+                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Join">Join</Link> </NavItem>    
             </Nav>
 		</Col>
 		</Row>
