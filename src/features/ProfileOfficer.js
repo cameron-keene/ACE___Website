@@ -1,12 +1,13 @@
 import React from 'react';
-import './Profile.css';
+import './ProfileOfficer.css';
 import { SocialIcon } from 'react-social-icons';
 
-function Profile({src, name, linkedin, github}){
+function Profile({src, title, name, linkedin, github}){
 	return(
 		<div className = 'profile'>
 			<img src = {src} alt = "" />
 			<div className = 'profile_info'>
+				<h2>{title}</h2>
 				<h4>{name}</h4>
 				<div className = "profile_icons">
 					<SocialIcon url= {linkedin} />

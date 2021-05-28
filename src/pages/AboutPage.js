@@ -1,7 +1,9 @@
 import React from 'react';
 import './AboutPage.css';
+import ProfileOfficer from '../features/ProfileOfficer.js';
 import Profile from '../features/Profile.js';
 import test_img from "./kayton.jpeg";
+import { Dropdown, DropdownButton } from 'react-bootstrap';
 
 function AboutPage() {
   return (
@@ -16,36 +18,67 @@ function AboutPage() {
   		and meet an amazing group of students to help you through 
   		your academic journey.</h5>
       <h2>Officers</h2>
-  		<div className = "about-content">
-  			<Profile 
+  		<div className = "about_officers">
+  			<ProfileOfficer 
     			src = {test_img}
     			title = "President"
     			name = "Kayton Fletcher" 
           linkedin = "https://www.linkedin.com/in/cameron-keene-53643b19b/"
           github = "https://github.com/cameron-keene"
     		/>
-        <Profile 
+        <ProfileOfficer 
           src = {test_img}
           title = "President"
           name = "Kayton Fletcher" 
           linkedin = "https://www.linkedin.com/in/cameron-keene-53643b19b/"
           github = "https://github.com/cameron-keene"
         />
-        <Profile 
+        <ProfileOfficer 
           src = {test_img}
           title = "President"
           name = "Kayton Fletcher" 
           linkedin = "https://www.linkedin.com/in/cameron-keene-53643b19b/"
           github = "https://github.com/cameron-keene"
         />
-        
+      </div>
 
-
+      <h2>Current Members</h2>
+      
+      <div className = "about_members">
+        <Profile 
+            src = {test_img}
+            name = "Kayton Fletcher" 
+            linkedin = "https://www.linkedin.com/in/cameron-keene-53643b19b/"
+            github = "https://github.com/cameron-keene"
+          /><Profile 
+            src = {test_img}
+            name = "Kayton Fletcher" 
+            linkedin = "https://www.linkedin.com/in/cameron-keene-53643b19b/"
+            github = "https://github.com/cameron-keene"
+          /><Profile 
+            src = {test_img}
+            name = "Kayton Fletcher" 
+            linkedin = "https://www.linkedin.com/in/cameron-keene-53643b19b/"
+            github = "https://github.com/cameron-keene"
+          /><Profile 
+            src = {test_img}
+            name = "Kayton Fletcher" 
+            linkedin = "https://www.linkedin.com/in/cameron-keene-53643b19b/"
+            github = "https://github.com/cameron-keene"
+          />
 
   		</div>
-  		
+      <h2>Past Members</h2>
+      <div className = "alumni_dropdown">
+        <DropdownButton id="dropdown-basic-button" title="Dropdown button" className = "pastmembers_dropdown">
+          <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+        </DropdownButton>
+      </div>
+      
+    </div>
 
-  	</div>
     
   );
 }
