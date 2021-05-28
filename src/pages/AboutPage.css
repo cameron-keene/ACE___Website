@@ -8,9 +8,19 @@
 	padding-bottom: 30px;
 }.aboutpage >h2{
 	border-radius: 10px;
+	padding-top: 30px;
 }
-.about-content{
+.about_officers{
 	padding-top: 30px;
 	display: flex;
 	flex-direction: row;
+}
+.about_members{
+	padding-top: 30px;
+	display: flex;
+	flex-direction: row;
+}
+.alumni_dropdown{
+	padding-top: 30px;]
+	background-color: red;
 }

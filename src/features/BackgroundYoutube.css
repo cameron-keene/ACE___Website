@@ -3,12 +3,15 @@
   padding-bottom: 56.25%;
   position: relative;
   height: 0;
+  width: 100%;
+  border-radius: 20px;
 }
 
 .video-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
+	position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    background-color: #000;
+
 }
