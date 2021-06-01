@@ -1,3 +1,4 @@
+Thomas Test
 # Cloning and testing repository for local development
 
 ### Using terminal
