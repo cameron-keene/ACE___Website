@@ -3,7 +3,7 @@
 ### Using terminal
 Install GitHub pages `npm install gh-pages --save-dev`
 
-Clone the repository: `clone https://github.com/cameron-keene/Please_work.git`
+Clone the repository: `clone https://github.com/cameron-keene/ACE_Website.git`
 
 Create a personal branch: `git checkout -b <branch_name>`
 
@@ -17,7 +17,7 @@ Run updated project: `npm start`
 
 ### Using GH desktop (assuming you also have Sublime Text)
 Clone the repository
-* Current Repository > Add > Clone Repositories > URL > https://github.com/cameron-keene/Please_work.git 
+* Current Repository > Add > Clone Repositories > URL > https://github.com/cameron-keene/ACE_Website.git 
 
 Create a personal branch
 * Current Branch > New Branch > "branch_name" > Create Branch > (If prompted) Bring my changes to "branch_name" > Switch Branch
