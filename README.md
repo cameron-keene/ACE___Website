@@ -46,6 +46,10 @@ Run updated project
 * Import in NavBar component "import { Link } from 'react-router-dom';"
 * use Link tags inside of NavItem tags to create links
 
+# Getting started with ReactJS Bootstrap
+* npm install react-bootstrap bootstrap@4.6.0
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
