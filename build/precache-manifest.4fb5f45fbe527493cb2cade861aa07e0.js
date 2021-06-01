@@ -12,12 +12,12 @@ self.__precacheManifest = [
     "url": "/ACE_Website/static/js/runtime~main.1e087cc2.js"
   },
   {
-    "revision": "8cac4f21b3318a08e947",
-    "url": "/ACE_Website/static/css/2.2eced045.chunk.css"
+    "revision": "8d3d338f49c513a5fcb5",
+    "url": "/ACE_Website/static/css/2.e4fc1281.chunk.css"
   },
   {
-    "revision": "8cac4f21b3318a08e947",
-    "url": "/ACE_Website/static/js/2.432ca2ba.chunk.js"
+    "revision": "8d3d338f49c513a5fcb5",
+    "url": "/ACE_Website/static/js/2.a9cd66db.chunk.js"
   },
   {
     "revision": "b4d0ba0882f9133c4bae",
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/ACE_Website/static/media/background.57cb6c0b.png"
   },
   {
-    "revision": "5ca58b57706e561194795f27bce6935d",
+    "revision": "e5d712298ea6427a9425b4e880587f11",
     "url": "/ACE_Website/index.html"
   }
 ];
