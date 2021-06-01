@@ -8,6 +8,7 @@ h1 {
 }
 
 .BackgroundImage > img{
-	width: 100%;
+	width: 85%;
 	height:auto;
+	scale: 0.50;
 }

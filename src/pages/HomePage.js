@@ -7,8 +7,11 @@ function HomePage() {
   return (
   	<div className = "homepage">
   		<BackgroundImage/>
-  		<h1>Latest Video</h1>
-  		  <BackgroundYoutube embedId="rokGy0huYEA" />
+  		<div className = "background_video">
+  			<h1>Latest Video</h1>
+  			<BackgroundYoutube className = "homepage_video" embedId="rokGy0huYEA" />
+
+  		</div>
 
   	</div>
     
