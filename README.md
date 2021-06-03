@@ -1,4 +1,3 @@
-Thomas Test
 # Cloning and testing repository for local development
 
 ### Using terminal
@@ -50,6 +49,10 @@ Run updated project
 # Getting started with ReactJS Bootstrap
 * npm install react-bootstrap bootstrap@4.6.0
 
+# Solution to npm start error involving 'immer' and 'webpack'
+* rm package-lock.json
+* rm -rf node_modules/
+* npm install --legacy-peer-devs
 
 # Getting Started with Create React App
 
