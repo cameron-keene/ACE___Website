@@ -2,7 +2,7 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
-import { Navbar, Nav, NavDropdown, NavItem } from 'react-bootstrap';
+import { Nav, NavItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import "./Footer.css"
 
@@ -26,15 +26,8 @@ return (
             <Nav className="ml-auto">
                 <NavItem>   <Link className="nav-link"   to="/ACE_Website/About">About us</Link> </NavItem> 
                 <NavItem>   <Link className="nav-link"   to="/ACE_Website/Projects">Projects</Link> </NavItem> 
-                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Tutorials">Tutorials</Link> </NavItem> 
-                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Sponsors">Sponsors</Link> </NavItem> 
-                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Join">Join</Link> </NavItem>    
-            </Nav>
-		</Col>
-		<Col>
-			<h5>Contact Us</h5>
-            <Nav className="ml-auto">
-                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Join">Join</Link> </NavItem>    
+                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Learn">Learn</Link> </NavItem> 
+                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Contact">Contact</Link> </NavItem>    
             </Nav>
 		</Col>
 		</Row>
