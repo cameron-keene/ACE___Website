@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavDropdown, NavItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import logo from '../imgs/logo-min.png';
-import HomePage from '../pages/HomePage';
 import { Link } from 'react-router-dom';
 import './NavigationBar.css';
 
@@ -16,9 +15,8 @@ class NavigationBar extends Component{
             <Nav className="ml-auto">
                 <NavItem>   <Link className="nav-link"   to="/ACE_Website/About">About us</Link> </NavItem> 
                 <NavItem>   <Link className="nav-link"   to="/ACE_Website/Projects">Projects</Link> </NavItem> 
-                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Tutorials">Tutorials</Link> </NavItem> 
-                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Sponsors">Sponsors</Link> </NavItem> 
-                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Join">Join</Link> </NavItem>   
+                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Learn">Learn</Link> </NavItem> 
+                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Contact">Contact</Link> </NavItem>   
             </Nav>
           </Navbar.Collapse>
         </Navbar>
