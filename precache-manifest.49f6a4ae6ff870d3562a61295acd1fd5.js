@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "a7bab2d1b699c412e0e9",
-    "url": "/ACE_Website/static/css/main.bef1a1cf.chunk.css"
+    "revision": "3fb37c95e49975fb11fc",
+    "url": "/ACE_Website/static/css/main.31304e3e.chunk.css"
   },
   {
-    "revision": "a7bab2d1b699c412e0e9",
-    "url": "/ACE_Website/static/js/main.21478959.chunk.js"
+    "revision": "3fb37c95e49975fb11fc",
+    "url": "/ACE_Website/static/js/main.40043035.chunk.js"
   },
   {
     "revision": "4e71242e61ab4b3b6a79",
     "url": "/ACE_Website/static/js/runtime~main.53ce6f72.js"
   },
   {
-    "revision": "b958a3b94ee80e1bf19f",
-    "url": "/ACE_Website/static/css/2.e4fc1281.chunk.css"
+    "revision": "e3d04b866aea73bf154f",
+    "url": "/ACE_Website/static/css/2.3a0f84fb.chunk.css"
   },
   {
-    "revision": "b958a3b94ee80e1bf19f",
-    "url": "/ACE_Website/static/js/2.5371b685.chunk.js"
+    "revision": "e3d04b866aea73bf154f",
+    "url": "/ACE_Website/static/js/2.023f961f.chunk.js"
   },
   {
     "revision": "15ecee893436a9911e7e",
@@ -36,7 +36,11 @@ self.__precacheManifest = [
     "url": "/ACE_Website/static/media/background.57cb6c0b.png"
   },
   {
-    "revision": "ca9fc0705714b0ce9aa485966f05349a",
+    "revision": "084ce27eb9b176190e1cf7d7fd451648",
+    "url": "/ACE_Website/static/media/jpm-logo.084ce27e.jpg"
+  },
+  {
+    "revision": "acb44cd968ca10587164ad752553f21c",
     "url": "/ACE_Website/index.html"
   }
 ];
