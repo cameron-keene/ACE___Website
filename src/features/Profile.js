@@ -1,3 +1,4 @@
+/*Saving for Current Members Page*/
 import React from 'react';
 import './Profile.css';
 import { SocialIcon } from 'react-social-icons';

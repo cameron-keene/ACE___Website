@@ -2,7 +2,7 @@ import React from 'react';
 import './ProfileOfficer.css';
 import { SocialIcon } from 'react-social-icons';
 
-function Profile({src, title, name, linkedin, github}){
+function ProfileOfficer({src, title, name, linkedin, github}){
 	return(
 		<div className = 'profile'>
 			<img src = {src} alt = "" />
@@ -19,4 +19,4 @@ function Profile({src, title, name, linkedin, github}){
 		</div>
 		)
 }
-export default Profile
+export default ProfileOfficer
