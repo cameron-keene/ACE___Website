@@ -19,8 +19,8 @@ function AboutPage() {
         academic journey.
       </h5>
 
-      <div className="sponsors">
-        <h2>Sponsors</h2>
+      <h2>Sponsors</h2>
+      <div className="about_sponsors">
         <ProfileSponsors
           src={jpm_logo}
           description="J.P. Morgan is a global leader in financial services, offering solutions to the world's most important corporations, governments and institutions in more than 100 countries."

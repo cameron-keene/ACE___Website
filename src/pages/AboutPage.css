@@ -1,26 +1,32 @@
 .aboutpage {
-	margin-top: 100px;
-	padding: 30px;
-	text-align: center;
-
-}.aboutpage >h5{
-	padding-top: 30px;
-	padding-bottom: 30px;
-}.aboutpage >h2{
-	border-radius: 10px;
-	padding-top: 30px;
+  margin-top: 100px;
+  padding: 30px;
+  text-align: center;
 }
-.about_officers{
-	padding-top: 30px;
-	display: flex;
-	flex-direction: row;
+.aboutpage > h5 {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-.about_members{
-	padding-top: 30px;
-	display: flex;
-	flex-direction: row;
+.aboutpage > h2 {
+  border-radius: 10px;
+  padding-top: 30px;
 }
-.alumni_dropdown{
-	padding-top: 30px;]
-	background-color: red;
+.about_sponsors {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.about_officers {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.about_members {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.alumni_dropdown {
+  padding-top: 30px;
+  ]background-color: red;
 }
