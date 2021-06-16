@@ -5,10 +5,9 @@ import NavigationBar from './features/NavigationBar';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ProjectsPage from './pages/ProjectsPage';
-import TutorialsPage from './pages/TutorialsPage';
-import SponsersPage from './pages/SponsorsPage';
-import JoinPage from './pages/JoinPage';
-import Footer from './features/Footer.js'
+import ContactPage from './pages/ContactPage';
+import Footer from './features/Footer.js';
+import LearnPage from './pages/LearnPage.js';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 
@@ -28,14 +27,11 @@ function App() {
 					<Route path = "/ACE_Website/Projects">
 						<ProjectsPage />
 					</Route>
-					<Route path = "/ACE_Website/Tutorials">
-						<TutorialsPage />
+					<Route path = "/ACE_Website/Learn">
+						<LearnPage />
 					</Route>
-					<Route path = "/ACE_Website/Sponsors">
-						<SponsersPage />
-					</Route>
-					<Route path = "/ACE_Website/Join">
-						<JoinPage />
+					<Route path = "/ACE_Website/Contact">
+						<ContactPage />
 					</Route>
 				</Switch>
 			</div>

@@ -14,11 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-<<<<<<< Updated upstream
-  "/ACE_Website/precache-manifest.4fb5f45fbe527493cb2cade861aa07e0.js"
-=======
-  "/ACE_Website/precache-manifest.49f6a4ae6ff870d3562a61295acd1fd5.js"
->>>>>>> Stashed changes
+  "/ACE_Website/precache-manifest.132d2841a3f80e5c2de61a7feff5aaa9.js"
 );
 
 workbox.clientsClaim();
@@ -34,5 +30,5 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerNavigationRoute("/ACE_Website/index.html", {
   
-  blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
+  blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
