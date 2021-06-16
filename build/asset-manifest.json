@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
   "main.css": "/ACE_Website/static/css/main.d550b435.chunk.css",
   "main.js": "/ACE_Website/static/js/main.38eb30bf.chunk.js",
   "main.js.map": "/ACE_Website/static/js/main.38eb30bf.chunk.js.map",
@@ -14,7 +15,25 @@
   "service-worker.js": "/ACE_Website/service-worker.js",
   "static/css/2.e4fc1281.chunk.css.map": "/ACE_Website/static/css/2.e4fc1281.chunk.css.map",
   "static/css/main.d550b435.chunk.css.map": "/ACE_Website/static/css/main.d550b435.chunk.css.map",
+=======
+  "main.css": "/ACE_Website/static/css/main.31304e3e.chunk.css",
+  "main.js": "/ACE_Website/static/js/main.40043035.chunk.js",
+  "main.js.map": "/ACE_Website/static/js/main.40043035.chunk.js.map",
+  "runtime~main.js": "/ACE_Website/static/js/runtime~main.53ce6f72.js",
+  "runtime~main.js.map": "/ACE_Website/static/js/runtime~main.53ce6f72.js.map",
+  "static/css/2.3a0f84fb.chunk.css": "/ACE_Website/static/css/2.3a0f84fb.chunk.css",
+  "static/js/2.023f961f.chunk.js": "/ACE_Website/static/js/2.023f961f.chunk.js",
+  "static/js/2.023f961f.chunk.js.map": "/ACE_Website/static/js/2.023f961f.chunk.js.map",
+  "static/js/3.da43d1a3.chunk.js": "/ACE_Website/static/js/3.da43d1a3.chunk.js",
+  "static/js/3.da43d1a3.chunk.js.map": "/ACE_Website/static/js/3.da43d1a3.chunk.js.map",
+  "index.html": "/ACE_Website/index.html",
+  "precache-manifest.49f6a4ae6ff870d3562a61295acd1fd5.js": "/ACE_Website/precache-manifest.49f6a4ae6ff870d3562a61295acd1fd5.js",
+  "service-worker.js": "/ACE_Website/service-worker.js",
+  "static/css/2.3a0f84fb.chunk.css.map": "/ACE_Website/static/css/2.3a0f84fb.chunk.css.map",
+  "static/css/main.31304e3e.chunk.css.map": "/ACE_Website/static/css/main.31304e3e.chunk.css.map",
+>>>>>>> Stashed changes
   "static/media/background.png": "/ACE_Website/static/media/background.57cb6c0b.png",
+  "static/media/jpm-logo.jpg": "/ACE_Website/static/media/jpm-logo.084ce27e.jpg",
   "static/media/kayton.jpeg": "/ACE_Website/static/media/kayton.4a18dcea.jpeg",
   "static/media/logo-min.png": "/ACE_Website/static/media/logo-min.45f7f118.png"
 }
