@@ -1,14 +1,15 @@
-.BackgroundImage{			
-    position: relative;
-    
-}		
-
-h1 {
-    text-align:center;
+.BackgroundImage {
+  position: relative;
 }
 
-.BackgroundImage > img{
-	width: 85%;
-	height:auto;
-	scale: 0.50;
+h1 {
+  text-align: center;
+}
+
+.BackgroundImage > img {
+  /*Centers the image*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*Centers the image*/
 }
