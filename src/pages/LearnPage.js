@@ -1,11 +1,10 @@
-import React from 'react';
+import React from "react";
 
 function TutorialsPage() {
   return (
-  	<div className = "TutorialsPage">
-  		<h1>TutorialsPage</h1>
-  	</div>
-    
+    <div className="TutorialsPage">
+      <h1>TutorialsPage</h1>
+    </div>
   );
 }
 
