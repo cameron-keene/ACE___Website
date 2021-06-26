@@ -59,7 +59,7 @@ Run updated project
 * npm install react-social-icons
 * import { SocialIcon } from 'react-social-icons';
 * How to use: 
-* * <SocialIcon url={linkedin} />, linkedin = url of the persons actual linkedin page
+* * SocialIcon url={linkedin} , linkedin = url of the persons actual linkedin page
 
 # Getting Started with Create React App
 
