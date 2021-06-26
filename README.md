@@ -54,6 +54,13 @@ Run updated project
 * rm -rf node_modules/
 * npm install --legacy-peer-devs
 
+# Install React-Social-Icons
+* referenced from https://github.com/jaketrent/react-social-icons
+* npm install react-social-icons
+* import { SocialIcon } from 'react-social-icons';
+* How to use: 
+* * <SocialIcon url={linkedin} />, linkedin = url of the persons actual linkedin page
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
