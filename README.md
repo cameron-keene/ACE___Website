@@ -49,6 +49,9 @@ Run updated project
 # Getting started with ReactJS Bootstrap
 * npm install react-bootstrap bootstrap@4.6.0
 
+# Getting started with FireBase
+* npm i --save firebase
+
 # Solution to npm start error involving 'immer' and 'webpack'
 * rm package-lock.json
 * rm -rf node_modules/
