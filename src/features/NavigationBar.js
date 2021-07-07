@@ -14,7 +14,6 @@ class NavigationBar extends Component{
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto">
                 <NavItem>   <Link className="nav-link"   to="/ACE_Website/About">About us</Link> </NavItem> 
-                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Projects">Projects</Link> </NavItem> 
                 <NavItem>   <Link className="nav-link"   to="/ACE_Website/Learn">Learn</Link> </NavItem> 
                 <NavItem>   <Link className="nav-link"   to="/ACE_Website/Contact">Contact</Link> </NavItem>   
             </Nav>

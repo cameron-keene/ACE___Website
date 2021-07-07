@@ -20,6 +20,8 @@
   padding-top: 30px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .about_members {
   padding-top: 30px;

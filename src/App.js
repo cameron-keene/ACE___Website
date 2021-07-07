@@ -4,10 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavigationBar from './features/NavigationBar';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
-import ProjectsPage from './pages/ProjectsPage';
+// import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
 import Footer from './features/Footer.js';
 import LearnPage from './pages/LearnPage.js';
+import AddOfficersPage from './pages/AddOfficersPage.js';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 
@@ -24,14 +25,14 @@ function App() {
 					<Route path = "/ACE_Website/About">
 						<AboutPage />
 					</Route>
-					<Route path = "/ACE_Website/Projects">
-						<ProjectsPage />
-					</Route>
 					<Route path = "/ACE_Website/Learn">
 						<LearnPage />
 					</Route>
 					<Route path = "/ACE_Website/Contact">
 						<ContactPage />
+					</Route>
+					<Route path = "/ACE_Website/Admin">
+						<AddOfficersPage />
 					</Route>
 				</Switch>
 			</div>

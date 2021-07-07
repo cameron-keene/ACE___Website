@@ -25,9 +25,9 @@ return (
 			<h5>Menu</h5>
             <Nav className="ml-auto">
                 <NavItem>   <Link className="nav-link"   to="/ACE_Website/About">About us</Link> </NavItem> 
-                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Projects">Projects</Link> </NavItem> 
                 <NavItem>   <Link className="nav-link"   to="/ACE_Website/Learn">Learn</Link> </NavItem> 
                 <NavItem>   <Link className="nav-link"   to="/ACE_Website/Contact">Contact</Link> </NavItem>    
+                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Admin">Admin</Link> </NavItem>    
             </Nav>
 		</Col>
 		</Row>
