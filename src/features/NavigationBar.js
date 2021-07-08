@@ -19,6 +19,7 @@ class NavigationBar extends Component {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto">
+<<<<<<< HEAD
               <NavItem>
                 {" "}
                 <Link className="nav-link" to="/ACE_Website/About">
@@ -43,6 +44,11 @@ class NavigationBar extends Component {
                   Contact
                 </Link>{" "}
               </NavItem>
+=======
+                <NavItem>   <Link className="nav-link"   to="/ACE_Website/About">About us</Link> </NavItem> 
+                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Learn">Learn</Link> </NavItem> 
+                <NavItem>   <Link className="nav-link"   to="/ACE_Website/Contact">Contact</Link> </NavItem>   
+>>>>>>> main
             </Nav>
           </Navbar.Collapse>
         </Navbar>

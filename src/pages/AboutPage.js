@@ -4,8 +4,21 @@ import ProfileSponsor from "../features/ProfileSponsor.js";
 import ProfileOfficer from "../features/ProfileOfficer.js";
 import test_img from "../imgs/kayton.jpeg";
 import jpm_logo from "../imgs/jpm-logo.jpg";
+import firebase from "./firebase";
+
 
 function AboutPage() {
+  const [officers, setOfficers] = React.useState([]);
+
+  React.useEffect( () => {
+    const db = firebase.firestore();
+    return db.collection('officers').onSnapshot((snapshot) => {
+      const officersData = [];
+      snapshot.forEach(doc => officersData.push({ ...doc.data(), id: doc.id }));
+      setOfficers(officersData);
+    });
+}, []);
+
   return (
     <div className="aboutpage">
       <h1>Founded in 2014</h1>
@@ -30,7 +43,7 @@ function AboutPage() {
 
       <h2>Officers</h2>
       <div className="about_officers">
-        <ProfileOfficer
+        {/* <ProfileOfficer
           src={test_img}
           title="President"
           name="Kayton Fletcher"
@@ -50,7 +63,22 @@ function AboutPage() {
           name="Kayton Fletcher"
           linkedin="https://www.linkedin.com/in/cameron-keene-53643b19b/"
           github="https://github.com/cameron-keene"
-        />
+        /> */}
+        
+        <div className="about_officers">
+        {officers.map(officer =>(
+          <div key = {officer.id}>
+            <ProfileOfficer
+              src={test_img}
+              title = {officer.role}
+              name = {officer.name}
+              linkedin = {officer.linkedin}
+              github = {officer.github}
+            />
+          </div>
+        ))}
+      </div>
+
       </div>
     </div>
   );
