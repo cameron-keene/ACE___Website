@@ -67,7 +67,7 @@ function AboutPage() {
         
         <div className="about_officers">
         {officers.map(officer =>(
-          <div key = {officer.id}>
+          <div key = {officer.id} className = "about_members">
             <ProfileOfficer
               src={test_img}
               title = {officer.role}
