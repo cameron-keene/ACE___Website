@@ -1,6 +1,4 @@
-/* Added s_ before all classNames to resolve conflict arising from matching classNames with ProfileOfficer.css */
-
-.s_profile {
+.profile {
   margin: 10px;
   border-radius: 10px;
   overflow: hidden;
@@ -13,11 +11,11 @@
   text-align: center;
 }
 
-.s_profile:hover {
+.profile:hover {
   transform: scale(1.07);
 }
 
-.s_profile > img {
+.profile > img {
   margin-bottom: 50px;
   border-radius: 12px;
   display: block;
@@ -29,7 +27,7 @@
   min-height: 100px;
 }
 
-.s_profile {
+.profile {
   margin-top: -9px;
   border-radius: 10px;
   padding: 20px;
@@ -37,35 +35,35 @@
   border: 1;
 }
 
-.s_profile_info > h2 {
+.profile_info > h2 {
   /*background-color: #F8F8F8;*/
   border-radius: 10px;
   font-size: 30px;
   font-weight: 600;
 }
 
-.s_profile_info > h4 {
+.profile_info > h4 {
   font-size: 20px;
   font-weight: 400;
   margin-top: 8px;
   margin-bottom: 16px;
 }
-.s_profile_info > h5 {
+.profile_info > h5 {
   font-size: 14px;
   font-weight: 800;
   margin-top: 8px;
   margin-bottom: 8px;
 }
-.s_profile_icons {
+.profile_icons {
   padding: 10px;
   display: inline;
 }
 
 /* To get the SocialIcons to transform, used ' >* ' to indicate 'all child descendants' of the attribute, but not the attribute itself */
-.s_profile_icons > * {
+.profile_icons > * {
   transition: transform 100ms ease-in;
 }
 
-.s_profile_icons:hover > * {
+.profile_icons:hover > * {
   transform: scale(1.5);
 }

@@ -14,12 +14,13 @@
 .about_sponsors {
   padding-top: 30px;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
 }
 .about_officers {
   padding-top: 30px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .about_members {
   padding-top: 30px;
