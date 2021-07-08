@@ -1,9 +1,9 @@
-import React from 'react'
-import './BackgroundYoutube.css';
+import React from "react";
+import classes from "./BackgroundYoutube.module.css";
 import PropTypes from "prop-types";
 
-const BackgroundYoutube = ({embedId}) => (
-	 <div className="video-responsive">
+const BackgroundYoutube = ({ embedId }) => (
+  <div className={classes.videoResponsive}>
     <iframe
       width="853"
       height="480"
@@ -16,7 +16,6 @@ const BackgroundYoutube = ({embedId}) => (
   </div>
 );
 BackgroundYoutube.propTypes = {
-  embedId: PropTypes.string.isRequired
-
+  embedId: PropTypes.string.isRequired,
 };
-export default BackgroundYoutube
+export default BackgroundYoutube;

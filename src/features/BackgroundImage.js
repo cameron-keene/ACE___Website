@@ -1,13 +1,13 @@
 import React from "react";
-import "./BackgroundImage.css";
+import classes from "./BackgroundImage.module.css";
 import image from "./background.png";
 function BackgroundImage() {
   return (
-    <div className="BackgroundImage">
-      <h1 className="BackgroundImage_text">
+    <div className={classes.BackgroundImage}>
+      <h1>
         UF Association of Computer Engineers
       </h1>
-      <img src={image} alt="" className="BackgroundImage_image"></img>
+      <img src={image} alt=""></img>
     </div>
   );
 }

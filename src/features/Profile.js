@@ -2,17 +2,18 @@
 import React from 'react';
 import './Profile.css';
 import { SocialIcon } from 'react-social-icons';
+import classes from './Profile.modules.css';
 
 function Profile({src, name, linkedin, github}){
 	return(
-		<div className = 'profile'>
+		<div className = {classes.profile}>
 			<img src = {src} alt = "" />
-			<div className = 'profile_info'>
+			<div className = {classes.profile_info}>
 				<h4>{name}</h4>
-				<div className = "profile_icons">
+				<div className = {classes.profile_icons}>
 					<SocialIcon url= {linkedin} />
 				</div>
-				<div className = "profile_icons">
+				<div className = {classes.profile_icons}>
 					<SocialIcon url= {github} />
 				</div>
 			</div>
