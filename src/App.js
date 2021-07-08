@@ -7,7 +7,7 @@ import AboutPage from './pages/AboutPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
 import Footer from './features/Footer.js';
-import LearnPage from './pages/LearnPage.js';
+import LearnPage from './pages/LearnPage';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 
