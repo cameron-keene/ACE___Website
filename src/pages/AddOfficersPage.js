@@ -13,6 +13,7 @@ function AddOfficersPage() {
   const [newOfficerEmail, setNewOfficerEmail] = React.useState([]);
   const [newOfficerLinkedin, setNewOfficerLinkedin] = React.useState([]);
   const [newOfficerImage, setNewOfficerImage] = React.useState([]);
+  const [fileURL, setFileURL] = React.useState([]);
 
 
   React.useEffect( () => {
@@ -23,13 +24,24 @@ function AddOfficersPage() {
         setOfficers(officersData);
       });
   }, []);
+
+  const onFileChange = async (e) =>{
+    const file = e.target.files[0];
+    const storageRef = firebase.storage().ref();
+    const fileRef = storageRef.child(file.name);
+    await fileRef.put(file);
+    setFileURL( await fileRef.getDownloadURL());
+    console.log(fileRef.getDownloadURL());
+  }
   
   const onCreate = () => {
     const db = firebase.firestore();
     db.collection('officers').add({name: newOfficerName, role: newOfficerRole, email: newOfficerEmail, linkedin: newOfficerLinkedin, image: newOfficerImage });
     
-
   }
+  
+
+
 
   return (
     <div className = "insert_feild">
@@ -39,7 +51,7 @@ function AddOfficersPage() {
         <input name = "role" value = {newOfficerRole} onChange = {(e) => setNewOfficerRole(e.target.value)}/>
         <input name = "email" value = {newOfficerEmail} onChange = {(e) => setNewOfficerEmail(e.target.value)}/>
         <input name = "linkedin" value = {newOfficerLinkedin} onChange = {(e) => setNewOfficerLinkedin(e.target.value)}/>
-        <input type = "file" name = "image" value = {setNewOfficerImage} onChange = {(e) => setNewOfficerImage(e.target.value)}/>
+        <input type = "file" name = "image" value = {setNewOfficerImage} onChange = {onFileChange}/>
 
         <button onClick = {onCreate}>Add Officer</button>
         {officers.map(officer =>(
@@ -54,8 +66,9 @@ function AddOfficersPage() {
       <div className="about_officers">
         {officers.map(officer =>(
           <div key = {officer.id}>
+            <a>{officer.role + ".jpg"}</a>
             <ProfileOfficer
-              src={test_img}
+              src={(officer.image)}
               title = {officer.role}
               name = {officer.name}
               linkedin = {officer.linkedin}
