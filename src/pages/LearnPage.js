@@ -30,15 +30,15 @@ function LearnPage() {
         <nav aria-label="...">
           <ul class="pagination">
             <li class="page-item disabled">
-             <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+             <button class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</button>
             </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><button class="page-link" href="#">1</button></li>
             <li class="page-item active" aria-current="page">
-              <a class="page-link" href="#">2</a>
+              <button class="page-link" href="#">2</button>
             </li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><button class="page-link" href="#">3</button></li>
             <li class="page-item">
-              <a class="page-link" href="#">Next</a>
+              <button class="page-link" href="#">Next</button>
             </li>
           </ul>
         </nav>

@@ -32,38 +32,8 @@ const Footer = () => {
               </NavItem>
               <NavItem>
                 {" "}
-                <Link className="nav-link" to="/ACE_Website/Projects">
-                  Projects
-                </Link>{" "}
-              </NavItem>
-              <NavItem>
-                {" "}
                 <Link className="nav-link" to="/ACE_Website/Learn">
                   Learn
-                </Link>{" "}
-              </NavItem>
-              <NavItem>
-                {" "}
-                <Link className="nav-link" to="/ACE_Website/Contact">
-                  Contact
-                </Link>{" "}
-              </NavItem>
-              <NavItem>
-                {" "}
-                <Link className="nav-link" to="/ACE_Website/About">
-                  About us
-                </Link>{" "}
-              </NavItem>
-              <NavItem>
-                {" "}
-                <Link className="nav-link" to="/ACE_Website/Learn">
-                  Learn
-                </Link>{" "}
-              </NavItem>
-              <NavItem>
-                {" "}
-                <Link className="nav-link" to="/ACE_Website/Contact">
-                  Contact
                 </Link>{" "}
               </NavItem>
               <NavItem>
