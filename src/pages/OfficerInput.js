@@ -7,12 +7,34 @@ export const OfficerInput = ({officer}) => {
     const [role, setRole] = React.useState(officer.role);
     const [email, setEmail] = React.useState(officer.email);
     const [linkedin, setLinkedin] = React.useState(officer.linkedin);
-    const [image, setImage] = React.useState(officer.image);
-    const [fileURL, setFileURL] = React.useState(officer.fileURL);
+
+    const [fileUrl, setFileUrl] = React.useState(null);
+
 
     const onUpdate = () => {
-        const db = firebase.firestore();
-        db.collection('officers').doc(officer.id).set({...officer, name, role, email, linkedin, image});
+        if (fileUrl){
+            const db = firebase.firestore();
+            // need way to store previous name
+            db.collection("officers").doc(officer.id).set({
+                name: name,
+                role: role,
+                email: email,
+                linkedin: linkedin,
+                avatar: fileUrl,
+            });
+        }
+        else{
+            const db = firebase.firestore();
+            // need way to store previous name
+            db.collection("officers").doc(officer.id).set({
+                name: name,
+                role: role,
+                email: email,
+                linkedin: linkedin,
+                // avatar: fileUrl,
+            });
+        }
+        
     }
 
     const onDelete = () => {
@@ -20,15 +42,14 @@ export const OfficerInput = ({officer}) => {
         db.collection('officers').doc(officer.id).delete();
     }
     // for file upload
-    const onFileChange = (e) =>{
+    const onFileChange = async (e) =>{
         const file = e.target.files[0];
         const storageRef = firebase.storage().ref();
         const fileRef = storageRef.child(file.name);
-        fileRef.put(file).then(() => {
-            console.log("Uploaded file", file.name);
-        })
-
-    }
+        await fileRef.put(file);
+        setFileUrl( await fileRef.getDownloadURL());
+        console.log(fileRef.getDownloadURL());
+      }
 
     return (<>
         <input 
@@ -55,11 +76,7 @@ export const OfficerInput = ({officer}) => {
                 setLinkedin(e.target.value);
             }}
         />
-        <input 
-            // type = "file" does not work ???
-            value = {fileURL} 
-            onChange = {onFileChange}
-        />
+        <input type="file" onChange={onFileChange} />
         <button onClick = {onUpdate}>Update</button>
         <button onClick = {onDelete}>Delete</button>
     </>
