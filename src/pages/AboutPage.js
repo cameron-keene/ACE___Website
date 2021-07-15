@@ -66,17 +66,17 @@ function AboutPage() {
         /> */}
         
         <div className="about_officers">
-        {officers.map(officer =>(
-          <div key = {officer.id} className = "about_members">
-            <ProfileOfficer
-              src={test_img}
-              title = {officer.role}
-              name = {officer.name}
-              linkedin = {officer.linkedin}
-              github = {officer.github}
-            />
-          </div>
-        ))}
+              {officers.map(officer =>(
+                <div key = {officer.id}>
+                  <ProfileOfficer
+                    src={(officer.avatar)}
+                    role = {officer.role}
+                    name = {officer.name}
+                    linkedin = {officer.linkedin}
+                    email = {officer.email}
+                  />
+                </div>
+              ))}
       </div>
 
       </div>
