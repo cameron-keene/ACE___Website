@@ -1,18 +1,18 @@
 import React from "react";
 import firebase from "./firebase";
-
+import "./OfficerInput.css"
 
 export const OfficerInput = ({officer}) => {
     const [name, setName] = React.useState(officer.name);
     const [role, setRole] = React.useState(officer.role);
     const [email, setEmail] = React.useState(officer.email);
     const [linkedin, setLinkedin] = React.useState(officer.linkedin);
-
-    const [fileUrl, setFileUrl] = React.useState(null);
+    const [fileUrl, setFileUrl] = React.useState(officer.fileUrl);
 
 
     const onUpdate = () => {
-        if (fileUrl){
+        console.log(fileUrl);
+        if (fileUrl != null){
             const db = firebase.firestore();
             // need way to store previous name
             db.collection("officers").doc(officer.id).set({
@@ -24,14 +24,26 @@ export const OfficerInput = ({officer}) => {
             });
         }
         else{
+            console.log("fileURL == null")
             const db = firebase.firestore();
-            // need way to store previous name
-            db.collection("officers").doc(officer.id).set({
-                name: name,
-                role: role,
-                email: email,
-                linkedin: linkedin,
-                // avatar: fileUrl,
+            const docRef = db.collection("officers").doc(officer.id);
+            docRef.get().then((doc) => {
+                if (doc.exists) {
+                    // console.log("avatar data:", doc.data().avatar);
+                    // console.log("Document data:", doc.data());
+                    db.collection("officers").doc(officer.id).set({
+                        name: name,
+                        role: role,
+                        email: email,
+                        linkedin: linkedin,
+                        avatar: doc.data().avatar,
+                    });
+                } else {
+                    // doc.data() will be undefined in this case
+                    console.log("No such document!");
+                }
+            }).catch((error) => {
+                console.log("Error getting document:", error);
             });
         }
         
@@ -51,7 +63,7 @@ export const OfficerInput = ({officer}) => {
         console.log(fileRef.getDownloadURL());
       }
 
-    return (<>
+    return (<div className = "officer_input">
         <input 
             value = {name} 
             onChange = {(e) => {
@@ -76,9 +88,9 @@ export const OfficerInput = ({officer}) => {
                 setLinkedin(e.target.value);
             }}
         />
-        <input type="file" onChange={onFileChange} />
+        <input type="file" onChange={onFileChange}/>
         <button onClick = {onUpdate}>Update</button>
         <button onClick = {onDelete}>Delete</button>
-    </>
+    </div>
     );
 };

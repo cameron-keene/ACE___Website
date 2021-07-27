@@ -18,17 +18,13 @@
   justify-content: center;
 }
 .about_officers {
-  padding-top: 30px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
-.about_members {
-  padding-top: 20px;
-  display: flex;
-  flex-direction: row;
-}
+
 .alumni_dropdown {
   padding-top: 30px;
   background-color: red;
