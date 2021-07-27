@@ -35,7 +35,7 @@ function AddOfficersPage() {
     e.preventDefault();
     const username = e.target.username.value;
     const role = e.target.role.value;
-    const email = "mailto:" + e.target.email.value;
+    const email = e.target.email.value;
     const linkedin = e.target.linkedin.value;
     if (!username || !fileUrl) {
       return;
@@ -91,7 +91,7 @@ function AddOfficersPage() {
                       role = {officer.role}
                       name = {officer.name}
                       linkedin = {officer.linkedin}
-                      email = {officer.email}
+                      email = {"mailto:" + officer.email}
                     />
                   </div>
                 ))}
