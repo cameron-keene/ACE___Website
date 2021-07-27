@@ -1,0 +1,38 @@
+.officer_input > input{
+    padding: 10px;
+    margin-right: 4px;
+    position: relative;
+    text-decoration: none;
+    background: transparent;
+    border: 5px !important;
+    border-color: white;
+
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 5px !important;
+    border-color: white;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 10px;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.officer_input > button{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 5px !important;
+    border-color: white;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 10px;
+    font-size: inherit;
+    font-family: inherit;
+    
+}

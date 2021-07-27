@@ -5,7 +5,7 @@ import classes from "./ProfileOfficer.module.css";
 function ProfileOfficer({ src, role, name, linkedin, email }) {
   return (
     <div className={classes.profile}>
-      <img src={src}/>
+      <img src={src} alt={src}/>
       <div className={classes.profile_info}>
         <h2>{role}</h2>
         <h4>{name}</h4>

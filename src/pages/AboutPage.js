@@ -2,7 +2,6 @@ import React from "react";
 import "./AboutPage.css";
 import ProfileSponsor from "../features/ProfileSponsor.js";
 import ProfileOfficer from "../features/ProfileOfficer.js";
-import test_img from "../imgs/kayton.jpeg";
 import jpm_logo from "../imgs/jpm-logo.jpg";
 import firebase from "./firebase";
 
@@ -43,27 +42,6 @@ function AboutPage() {
 
       <h2>Officers</h2>
       <div className="about_officers">
-        {/* <ProfileOfficer
-          src={test_img}
-          title="President"
-          name="Kayton Fletcher"
-          linkedin="https://www.linkedin.com/in/cameron-keene-53643b19b/"
-          github="https://github.com/cameron-keene"
-        />
-        <ProfileOfficer
-          src={test_img}
-          title="President"
-          name="Kayton Fletcher"
-          linkedin="https://www.linkedin.com/in/cameron-keene-53643b19b/"
-          github="https://github.com/cameron-keene"
-        />
-        <ProfileOfficer
-          src={test_img}
-          title="President"
-          name="Kayton Fletcher"
-          linkedin="https://www.linkedin.com/in/cameron-keene-53643b19b/"
-          github="https://github.com/cameron-keene"
-        /> */}
         
         <div className="about_officers">
               {officers.map(officer =>(
