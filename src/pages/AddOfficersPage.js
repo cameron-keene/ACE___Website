@@ -35,7 +35,7 @@ function AddOfficersPage() {
     e.preventDefault();
     const username = e.target.username.value;
     const role = e.target.role.value;
-    const email = e.target.email.value;
+    const email = "mailto:" + e.target.email.value;
     const linkedin = e.target.linkedin.value;
     if (!username || !fileUrl) {
       return;
