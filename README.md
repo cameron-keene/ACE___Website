@@ -37,6 +37,13 @@ Run updated project
 * merge to main branch
 * result will show up on gh-pages in roughly 5-10 minutes
 
+# Necessary Installs
+* npm install react-router-dom@5 
+* npm install react-bootstrap bootstrap@4.6.0
+* npm i --save firebase
+* npm install react-social-icons
+
+
 # Getting started with React-Router-Dom
 * Install with command: npm install react-router-dom@5 
 * Uses version 5 of react-router, lastest stable build
@@ -45,12 +52,6 @@ Run updated project
 * then use Switch tags and Route tags to contain call to component
 * Import in NavBar component "import { Link } from 'react-router-dom';"
 * use Link tags inside of NavItem tags to create links
-
-# Getting started with ReactJS Bootstrap
-* npm install react-bootstrap bootstrap@4.6.0
-
-# Getting started with FireBase
-* npm i --save firebase
 
 # Solution to npm start error involving 'immer' and 'webpack'
 * rm package-lock.json
@@ -62,35 +63,4 @@ Run updated project
 * npm install react-social-icons
 * import { SocialIcon } from 'react-social-icons';
 * How to use: 
-* * SocialIcon url={linkedin} , linkedin = url of the persons actual linkedin page
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* SocialIcon url={linkedin} , linkedin = url of the persons actual linkedin page
