@@ -5,6 +5,8 @@ import Col from "react-bootstrap/Col";
 import { Nav, NavItem } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import styles from "./Footer.module.css";
+import { SocialIcon } from "react-social-icons";
+
 
 const Footer = () => {
   return (
@@ -16,9 +18,11 @@ const Footer = () => {
             {/* TODO 
             Add Social Media Icons */}
             <Nav className="ml-auto" bg="dark">
-              <Nav.Link href="#aboutus">Instagram</Nav.Link>
-              <Nav.Link href="#projects">Facebook</Nav.Link>
-              <Nav.Link href="#deets">Slack</Nav.Link>
+              <div className = "icons">
+                <SocialIcon url = "https://www.instagram.com/ace_uf/"></SocialIcon>
+                <SocialIcon url = "https://twitter.com/ace_uf/"></SocialIcon>
+                <SocialIcon url = "https://www.facebook.com/GatorACE"></SocialIcon>
+              </div>
             </Nav>
           </Col>
           <Col>

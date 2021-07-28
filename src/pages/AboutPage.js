@@ -20,7 +20,7 @@ function AboutPage() {
 
   return (
     <div className="aboutpage">
-      <h1>Founded in 2014</h1>
+      <h1> Founded in 2014</h1>
       <h3>
         The Association of Computer Engineers serves as a community dedicated to
         representing the union of computer science and electrical engineering.

@@ -71,17 +71,20 @@ function AddOfficersPage() {
           ))}
       </ul>    
 
-      <h3>Test Input</h3>
+      <h3>Insert New Officer</h3>
       <div className="test_input">
-        <form onSubmit={onSubmit}>
-          <input type="text" name="username" placeholder="Name" />
-          <input type="text" name="role" placeholder="Role" />
-          <input type="text" name="email" placeholder="Email" />
-          <input type="text" name="linkedin" placeholder="LinkedIn" />
-          <input type="file" onChange={onFileChange} />
+        <div className = "input_form">
+          <form onSubmit={onSubmit}>
+            <input type="text" name="username" placeholder="Name" />
+            <input type="text" name="role" placeholder="Role" />
+            <input type="text" name="email" placeholder="Email" />
+            <input type="text" name="linkedin" placeholder="LinkedIn" />
+            <input type="file" onChange={onFileChange} />
 
-          <button>Submit</button>
-        </form>
+            <button className = "submit_button">Submit</button>
+          </form>
+        </div>
+
 
         <div className="about_officers">
                 {officers.map(officer =>(

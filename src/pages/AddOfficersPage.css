@@ -11,14 +11,11 @@
 }
 .insert_feild{
     width: 100%;
-    background: linear-gradient(
-    45deg,rgba(213,0,125,0.8),rgba(229,57,53,0.8)), 50%;
+    background: white;
     border-radius: 10px;
     overflow: hidden;
     padding: 72px 55px 90px;
-}
-.insert_feild > button{
-    background-color: red;
+    margin-top: 25px;
 }
 .about_officers{
     padding-top: 100px;
@@ -26,4 +23,38 @@
 .about_officers > * > *{
     background-color: white;
     margin-bottom: 30px;
+}
+.input_form  {
+    margin-left: 40px;
+}
+.input_form > * > *{
+    padding: 10px;
+    margin-right: 4px;
+    position: relative;
+    /* background-color: red; */
+}
+
+.submit_button{
+    
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border: 5px !important;
+    border-color: white;
+    margin-right:5px;
+    padding: 10px;
+    background-color: #282c33;
+    color: white;
+}
+.submit_button:hover{
+    
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border: 5px !important;
+    border-color: white;
+    margin-right:5px;
+    padding: 10px;
+    background-color: white;
+    color: #282c33;
 }
