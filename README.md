@@ -38,10 +38,10 @@ Run updated project
 * result will show up on gh-pages in roughly 5-10 minutes
 
 # Necessary Installs
-* npm install react-router-dom@5 
-* npm install react-bootstrap bootstrap@4.6.0
+* npm i react-router-dom@5 
+* npm i react-bootstrap bootstrap@4.6.0
 * npm i --save firebase
-* npm install react-social-icons
+* npm i react-social-icons
 
 
 # Getting started with React-Router-Dom
