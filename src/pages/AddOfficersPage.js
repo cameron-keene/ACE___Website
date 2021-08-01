@@ -3,6 +3,9 @@ import firebase from "./firebase";
 import { OfficerInput } from './OfficerInput';
 import ProfileOfficer from "../features/ProfileOfficer";
 import "./AddOfficersPage.css";
+import { NavItem } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 
 const db = firebase.firestore();
 
@@ -64,7 +67,22 @@ function AddOfficersPage() {
   return (
     <div className = "modify_page">
       <div className = "insert_feild">
-      <h3>Modify Officers</h3>
+        <div class = "row">
+        <div class = "col">
+        <NavItem>
+                <Link className="nav-link" to="/ACE_Website/Admin">
+                <h3>Modify Officers</h3>         
+                </Link>
+        </NavItem>
+        </div>
+        <div class = "col">
+        <NavItem>
+                <Link className="nav-link" to="/ACE_Website/AdminLearn">
+                <h3>Modify Learn Page</h3>         
+                </Link>
+        </NavItem>
+        </div>
+        </div>
       <ul className = "current_officers">
           {officers.map(officer =>(
               <OfficerInput officer = {officer}/>

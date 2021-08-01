@@ -10,6 +10,7 @@ import Footer from './features/Footer.js';
 import LearnPage from './pages/LearnPage.js';
 import AddOfficersPage from './pages/AddOfficersPage.js';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import AddLearnPage from './pages/AddLearnPage';
 
 
 function App() {
@@ -33,6 +34,9 @@ function App() {
 					</Route>
 					<Route path = "/ACE_Website/Admin">
 						<AddOfficersPage />
+					</Route>
+					<Route path = "/ACE_Website/AdminLearn">
+						<AddLearnPage />
 					</Route>
 				</Switch>
 			</div>

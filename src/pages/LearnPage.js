@@ -1,31 +1,35 @@
 import React from "react";
 import VideoThumbnail from "../features/VideoThumbnail";
-//import "./HomePage.css";
+import "./LearnPage.css";
+import firebase from "./firebase";
 
 function LearnPage() {
+  const [videos, setVideos] = React.useState([]);
+
+  React.useEffect( () => {
+    const db = firebase.firestore();
+    return db.collection('videos').onSnapshot((snapshot) => {
+      const videosData = [];
+      snapshot.forEach(doc => videosData.push({ ...doc.data(), id: doc.id }));
+      setVideos(videosData);
+    });
+}, []);
+
   return (
     <div className="LearnPage">
-      <h1> Latest Videos </h1>
-      <div className="videos">
-        <VideoThumbnail embedId="XuNux7OdOnw" title="video 1" 
-        description = "description goes here description goes here  description goes here description goes here description goes here" tags="github"/>
-      </div>
-      <div className="videos">
-        <VideoThumbnail embedId="OJ_zgmvdK1o" title="video 2" 
-        description = "description goes here" tags="c++"/>
-      </div>
-      <div className="videos">
-        <VideoThumbnail embedId="1ygFeSr1l1Y" title="video 3" 
-        description = "description goes here" tags="React"/>
-      </div>
-      <div className="videos">
-        <VideoThumbnail embedId="HJhvMSo7JAQ" title="video 4" 
-        description = "description goes here" tags="Leetcode"/>
-      </div>
-      <div className="videos">
-        <VideoThumbnail embedId="DL9EnDdZNFE" title="video 5" 
-        description = "description goes here" tags="GBM"/>
-      </div>
+      <h1> Videos </h1>
+        {videos.map(video =>(
+          <div key = {video.id}>
+            <div className = "videos">
+            <VideoThumbnail 
+                embedId = {video.videoID} 
+                title = {video.title}  
+                description = {video.description}
+                tags= {video.tag}/>
+            </div>
+            </div>
+        ))}
+
       <section id="pagination" class="d-flex justify-content-center">
         <nav aria-label="...">
           <ul class="pagination">
