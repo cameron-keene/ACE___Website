@@ -48,12 +48,12 @@ Run updated project
 * use Link tags inside of NavItem tags to create links
 
 # Clearing npm start errors from out-of-date node_modules folder and package_lock file.
-* MAC
+### MAC
 * rm package-lock.json
 * rm -rf node_modules/
 * npm install --legacy-peer-deps
-*
-* WINDOWS
+
+### WINDOWS
 * del package-lock.json
 * rmdir /S node_modules
 * npm install --legacy-peer-deps
