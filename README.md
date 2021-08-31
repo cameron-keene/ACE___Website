@@ -37,12 +37,6 @@ Run updated project
 * merge to main branch
 * result will show up on gh-pages in roughly 5-10 minutes
 
-# Necessary Installs
-* npm i react-router-dom@5 
-* npm i react-bootstrap bootstrap@4.6.0
-* npm i --save firebase
-* npm i react-social-icons
-
 
 # Getting started with React-Router-Dom
 * Install with command: npm install react-router-dom@5 
@@ -53,10 +47,17 @@ Run updated project
 * Import in NavBar component "import { Link } from 'react-router-dom';"
 * use Link tags inside of NavItem tags to create links
 
-# Solution to npm start error involving 'immer' and 'webpack'
+# Clearing npm start errors from out-of-date node_modules folder and package_lock file.
+* MAC
 * rm package-lock.json
 * rm -rf node_modules/
-* npm install --legacy-peer-devs
+* npm install --legacy-peer-deps
+*
+* WINDOWS
+* del package-lock.json
+* rmdir /S node_modules
+* npm install --legacy-peer-deps
+* 
 
 # Install React-Social-Icons
 * referenced from https://github.com/jaketrent/react-social-icons
