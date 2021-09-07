@@ -57,7 +57,6 @@ Run updated project
 * del package-lock.json
 * rmdir /S node_modules
 * npm install --legacy-peer-deps
-* 
 
 # Install React-Social-Icons
 * referenced from https://github.com/jaketrent/react-social-icons
